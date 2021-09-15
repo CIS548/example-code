@@ -1,6 +1,6 @@
 # Example Codes for Operating System Course
 
-This is the repostiroy for example code from Prof. Boon Thau Loo's Operating System Course (CIS 380, CIS 548 , and CITO 595) at University of Pennsylvania.
+This is the repository for example code from Prof. Boon Thau Loo's Operating System Course (CIS 380, CIS 548 , and CITO 595) at University of Pennsylvania.
 
 The code are named by topics. The topics are covered in the following weeks.
 
