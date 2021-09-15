@@ -1,4 +1,4 @@
-# Example Code for Operating Systems Design and Implementation
+# OS Design and Implementation Example Code
 
 This is the repostiroy for example code from Prof. Boon Thau Loo's Operating System Course (CIS 380, CIS 548 , and CITO 595) at University of Pennsylvania.
 
