@@ -23,7 +23,9 @@ int main (int argc, const char * argv[]) {
     argv[0] = "ls";
     argv[1] = "-l";   
     argv[2] = NULL;
-
+    
+    close(fd[0]);
+    close(fd1[0]);
     close(fd[1]);
     close(fd1[1]);
 
@@ -43,6 +45,9 @@ int main (int argc, const char * argv[]) {
     char *argv[10];
     argv[0] = "more";  argv[1] = NULL;
 
+    // close read end of pipes you don't use
+    close(fd[0]);
+    close(fd1[0]);
     // close write end of pipes you don't use
     close(fd[1]);
     close(fd1[1]);
@@ -56,7 +61,10 @@ int main (int argc, const char * argv[]) {
     if (ret < 0) perror("dup2");
     char *argv[10];
     argv[0] = "wc";  argv[1] = NULL;
-
+    
+    // close read end of pipes you don't use
+    close(fd[0]);
+    close(fd1[0]);
     // close write of pipes you don't use
     close(fd[1]);
     close(fd1[1]);
@@ -65,6 +73,8 @@ int main (int argc, const char * argv[]) {
 
   printf("%d %d %d\n", pid0, pid1, pid2);
   // close parent's pipes
+  close(fd[0]);
+  close(fd1[0]);
   close(fd[1]);
   close(fd1[1]);
 
