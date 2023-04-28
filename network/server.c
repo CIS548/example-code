@@ -56,9 +56,9 @@ int main(int argc, char *argv[]) {
       perror("simplex-talk: accept");
       exit(1);
     }
-    while(len = recv(new_s, buf, sizeof(buf), 0)){
-        fputs(buf, stdout);
-        }
+    while(recv(new_s, buf, sizeof(buf), 0)){
+      fputs(buf, stdout);
+    }
     close(new_s);
   }
 
