@@ -4,7 +4,7 @@ CC = clang
 # Define CFLAGS for the flags we will want to use with clang
 CFLAGS = -g -Wall
 
-TARGETS = clean c-example
+TARGETS = c-example
 
 # If no arguments are passed to make, it will attempt the 'c-example' target
 default: c-example
